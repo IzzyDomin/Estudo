@@ -5,10 +5,11 @@
 	box-sizing: border-box;
 	margin: 20px 40px;
 	padding: 20px;
+	float: right;
 }
 
 .fiat {
-	float: right;
+	float:right;
 }
 
 .petrobras {
