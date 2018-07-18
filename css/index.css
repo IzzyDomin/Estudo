@@ -8,13 +8,8 @@
 	float: right;
 }
 
-.fiat {
-	float:right;
-}
-
-.petrobras {
-	float: left;
-}
+.citacao-bio:nth-of-type(odd);
+.citacao-bio:nth-of-type(even);
 
 cite {
 	font-style: italic;
