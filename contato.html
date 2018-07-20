@@ -7,8 +7,7 @@
     	<link rel="icon" href="img/favicon.png">
     	<link rel="stylesheet" href="css/reset.css">
     	<link rel="stylesheet" href="css/style.css">
-    	<link rel="stylesheet" href="css/index.css">
-    	<link rel="stylesheet" href="css/contato.css">
+     	<link rel="stylesheet" href="css/contato.css">
     	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
     </head>
@@ -18,16 +17,11 @@
 			<div class="container">
 				<form>
 					<fieldset>
-						<legend>Dados Pessoais</legend>
-						<label for="nome">Nome:</label>
-						<input id="nome"
-						type="text" name="nome" placeholder="Seu nome aqui" required 
-						autofocus 
-						pattern="[A-Za-z ']{3,}"
-						title="O nome precisa ter no minimo 3 caractere">
-						<label for="email">E-mail</label>
-						<input id="email" type="email" name="email"
-						required placeholder="seu@email.com" type="email">
+					<legend>Seus dados</legend>
+                <label class="com-icone" for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{3,}" title="O nome precisa ter pelo menos 3s caracteres">
+                    <label class="com-icone" for="email">E-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
 					</fieldset>
 					<fieldset>
 						<legend>Assunto</legend>
@@ -38,7 +32,7 @@
 							<input type="radio" name="assunto" value="blog">Blog
 						</label>
 						 <fieldset>
-                        <input type="radio" name="assunto" value="Outro" id="outro">
+                        <input type="radio" name="assunto" value="outro" id="outro">
                         <label for="outro">
                             Outro
                         </label>

@@ -7,10 +7,12 @@
     color: #99A;
     line-height: 1;
     padding: 2em;
+
 }
 .saudacao-inicio {
     font-size: 3em;
-    color: #889;
+    color: #889
+
 }
 .saudacao-ultima-linha {
     text-align: right;
@@ -26,6 +28,16 @@
     -webkit-transform: rotate(-5deg) skew(-10deg);
             transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
+    -webkit-animation: flutua 1s ease-in-out infinite;
+            animation: flutua 1s ease-in-out infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    position: relative;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+.saudacao:hover em{
+    animation-play-state: paused;
 }
 .botao-inicio {
     font-size: 1.25em;
@@ -239,6 +251,12 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
+   -webkit-animation: aparece 0.2s;
+           animation: aparece 0.2s;
+   -webkit-animation-delay: 1s;
+           animation-delay: 1s;
+   -webkit-animation-fill-mode:backwards;
+           animation-fill-mode: backwards;        
 }
 .blog .inicio-post {
     position: absolute;
@@ -264,4 +282,36 @@ body {
 .blog a:focus{
     background-color: #F2FFFC;
     color: #F26;
+}
+.botao-inicio:focus,
+.botao-inicio:hover{
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
+}
+.botao-inicio{
+    text-decoration: none;
+    transition: 3s;
+}
+@-webkit-keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+  }  
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@-webkit-keyframes flutua{
+    from {
+        top: -5px;
+    }
+    to {
+        top:5px;
+    }
 }
