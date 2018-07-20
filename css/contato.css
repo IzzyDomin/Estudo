@@ -26,6 +26,12 @@ label[for="outro"] {
 input[name="outro-assunto"] {
     width: auto;
 }
+input[value="outro"] ~ input {
+  display: none;
+}
+input[value="outro"]:checked ~ input{
+  display: inline;
+}
 input:focus,
 textarea:focus{
     background-color: #ffd;
@@ -50,12 +56,6 @@ button:focus {
 }
 fieldset > fieldset {
     display: inline;
-}
-input[for="outro"] {
-    display: inline;
-}
-input[name="outro-assunto"] {
-   width: auto;
 }
 label[for="name"]{
     position: relative;
